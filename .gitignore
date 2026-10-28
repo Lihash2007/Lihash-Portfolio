@@ -1,0 +1,28 @@
+# System & OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Temporary & Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.tmp/
+temp/
+
+# Environment & Sensitive
+.env
+.env.local
+.env.*.local
+*.pem
+*.key

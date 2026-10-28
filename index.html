@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Lihash L B — Machine Learning, Computer Vision Engineer & Researcher. Specializing in Ensemble Learning, Deep Learning CNNs, and NLP Systems.">
+    <meta name="keywords" content="Lihash L B, Machine Learning, AI Engineer, Computer Vision, Deep Learning, Portfolio, KPR Institute">
+    <meta name="author" content="Lihash L B">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Lihash L B | Machine Learning Engineer">
+    <meta property="og:description" content="Portfolio of Lihash L B — AI/ML Engineer specializing in Computer Vision, Stacking Ensemble Models, and Geospatial NLP.">
+    <meta property="og:image" content="images/avatar.jpg">
+
+    <title>Lihash | Machine Learning Engineer Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+    <!-- Google Fonts: Outfit & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Reading Progress Indicator -->
+    <div id="scroll-progress-line" class="scroll-progress-bar"></div>
+
+    <!-- Interactive Ambient Glow Backdrop -->
+    <div class="ambient-glow-layer" aria-hidden="true">
+        <div class="ambient-spot spot-amber"></div>
+        <div class="ambient-spot spot-cyan"></div>
+        <div class="ambient-spot spot-indigo"></div>
+    </div>
+
+    <!-- Neural Synapse Canvas -->
+    <canvas id="neural-canvas"></canvas>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+
+    <!-- ========================================================
+         TOP NAVIGATION BAR (SIMPLE, CLEAR & INTUITIVE)
+         ======================================================== -->
+    <header id="site-header">
+        <nav class="navbar-capsule" aria-label="Main Navigation">
+            
+            <!-- Brand Logo: Just "Lihash" -->
+            <a href="#home" class="nav-brand">
+                <span class="brand-badge">L</span>
+                <span class="brand-title">Lihash</span>
+            </a>
+
+            <!-- Clear, Easy-to-Understand Menu Links -->
+            <div class="nav-links-wrap" id="nav-menu">
+                <a href="#home" class="nav-item active" data-target="home">Home</a>
+                <a href="#about" class="nav-item" data-target="about">About</a>
+                <a href="#story" class="nav-item" data-target="story">My Story</a>
+                <a href="#skills" class="nav-item" data-target="skills">Skills</a>
+                <a href="#projects" class="nav-item" data-target="projects">Projects</a>
+                <a href="#research" class="nav-item" data-target="research">Research</a>
+                <a href="#education" class="nav-item" data-target="education">Education</a>
+                <a href="#contact" class="nav-item" data-target="contact">Contact</a>
+            </div>
+
+            <!-- Header Action & Mobile Toggle -->
+            <div class="nav-actions">
+                <a href="#contact" class="btn-nav-contact">
+                    <span>Contact Me</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <button class="menu-burger-btn" id="mobile-toggle" aria-label="Toggle navigation menu">
+                    <span class="burger-bar"></span>
+                    <span class="burger-bar"></span>
+                    <span class="burger-bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+        <div class="mobile-drawer-card">
+            <div class="drawer-header">
+                <div class="drawer-brand">
+                    <span class="brand-badge">L</span>
+                    <span class="brand-title">Lihash</span>
+                </div>
+                <button class="drawer-close-btn" id="drawer-close" aria-label="Close menu">&times;</button>
+            </div>
+            <div class="drawer-links">
+                <a href="#home" class="drawer-item"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="#about" class="drawer-item"><i class="fa-solid fa-user"></i> About</a>
+                <a href="#story" class="drawer-item"><i class="fa-solid fa-route"></i> My Story</a>
+                <a href="#skills" class="drawer-item"><i class="fa-solid fa-laptop-code"></i> Skills</a>
+                <a href="#projects" class="drawer-item"><i class="fa-solid fa-diagram-project"></i> Projects</a>
+                <a href="#research" class="drawer-item"><i class="fa-solid fa-newspaper"></i> Research Paper</a>
+                <a href="#education" class="drawer-item"><i class="fa-solid fa-graduation-cap"></i> Education</a>
+                <a href="#contact" class="drawer-item"><i class="fa-solid fa-paper-plane"></i> Contact</a>
+            </div>
+            <div class="drawer-footer">
+                <a href="mailto:Lihashbalusamy@gmail.com" class="drawer-contact-pill">Lihashbalusamy@gmail.com</a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- ========================================================
+             HERO SECTION — SLEEK EMBER & CYAN ACCENT DESIGN
+             ======================================================== -->
+        <section id="home" class="hero-section">
+            <div class="container hero-layout">
+                
+                <!-- Left: Headline & Introduction -->
+                <div class="hero-content reveal">
+                    <div class="status-chip">
+                        <span class="chip-pulse"></span>
+                        <span class="chip-text">OPEN FOR AI & MACHINE LEARNING INTERNSHIPS</span>
+                    </div>
+
+                    <h1 class="hero-heading">
+                        Hi, I'm <span class="highlight-text">Lihash L B</span>
+                    </h1>
+                    
+                    <h2 class="hero-role">
+                        Machine Learning & Computer Vision Engineer
+                    </h2>
+
+                    <p class="hero-description">
+                        Third-year B.E. student specializing in Artificial Intelligence & Machine Learning at <strong>KPR Institute of Engineering and Technology</strong> (CGPA: <strong>7.9/10</strong>). I build high-precision predictive models, real-time computer vision systems, and published stacking ensemble architectures for healthcare.
+                    </p>
+
+                    <!-- Key Action Buttons -->
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn-primary-glow">
+                            <span>View My Projects</span>
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </a>
+                        <a href="#research" class="btn-secondary-outline">
+                            <i class="fa-solid fa-book-open"></i>
+                            <span>Read Published Paper</span>
+                        </a>
+                        <a href="#contact" class="btn-secondary-outline">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>Get in Touch</span>
+                        </a>
+                    </div>
+
+                    <!-- Clean Metric Cards Bar -->
+                    <div class="hero-stats-row">
+                        <div class="stat-box">
+                            <span class="stat-num" data-target="7.9">7.9</span>
+                            <span class="stat-lbl">Academic CGPA</span>
+                        </div>
+                        <div class="stat-separator"></div>
+                        <div class="stat-box">
+                            <span class="stat-num" data-target="4">4</span>
+                            <span class="stat-lbl">Core AI Projects</span>
+                        </div>
+                        <div class="stat-separator"></div>
+                        <div class="stat-box">
+                            <span class="stat-num">1</span>
+                            <span class="stat-lbl">Published Research</span>
+                        </div>
+                        <div class="stat-separator"></div>
+                        <div class="stat-box">
+                            <span class="stat-num" data-target="90.6">90.6%</span>
+                            <span class="stat-lbl">SSLC Score</span>
+                        </div>
+                    </div>
+
+                    <!-- Direct Contact Links -->
+                    <div class="hero-social-strip">
+                        <span class="social-strip-title">Connect:</span>
+                        <a href="https://github.com/lihash2007" target="_blank" class="social-tag">
+                            <i class="fa-brands fa-github"></i> github.com/lihash2007
+                        </a>
+                        <a href="https://www.linkedin.com/in/lihashbalusamy/" target="_blank" class="social-tag">
+                            <i class="fa-brands fa-linkedin"></i> lihashbalusamy
+                        </a>
+                        <a href="mailto:Lihashbalusamy@gmail.com" class="social-tag">
+                            <i class="fa-solid fa-envelope"></i> Email
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right: Visual Profile Stage with Floating Chips -->
+                <div class="hero-visual reveal delay-1">
+                    <div class="profile-card-stage">
+                        
+                        <!-- Floating Badge 1 -->
+                        <div class="profile-satellite sat-top">
+                            <div class="sat-icon"><i class="fa-solid fa-brain"></i></div>
+                            <div class="sat-text">
+                                <strong>Stacking ML</strong>
+                                <span>Published Paper</span>
+                            </div>
+                        </div>
+
+                        <!-- Floating Badge 2 -->
+                        <div class="profile-satellite sat-right">
+                            <div class="sat-icon"><i class="fa-solid fa-eye"></i></div>
+                            <div class="sat-text">
+                                <strong>Computer Vision</strong>
+                                <span>CNN Real-Time 60FPS</span>
+                            </div>
+                        </div>
+
+                        <!-- Floating Badge 3 -->
+                        <div class="profile-satellite sat-bottom">
+                            <div class="sat-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                            <div class="sat-text">
+                                <strong>Geospatial NLP</strong>
+                                <span>Sthalam + PlaceLens</span>
+                            </div>
+                        </div>
+
+                        <!-- Main Profile Avatar Frame -->
+                        <div class="profile-frame">
+                            <div class="profile-glow-ring"></div>
+                            <div class="profile-img-wrap">
+                                <img src="images/avatar.jpg" alt="Lihash L B — Machine Learning Engineer" class="profile-img">
+                            </div>
+                            <div class="profile-info-pill">
+                                <span class="profile-name">Lihash L B</span>
+                                <span class="profile-tag">B.E. CSE AIML &bull; KPR Tech</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========================================================
+             MARQUEE TICKER (SKILLS & CORE DOMAINS)
+             ======================================================== -->
+        <div class="skills-ticker-strip">
+            <div class="ticker-content">
+                <span>MACHINE LEARNING</span> <i class="fa-solid fa-circle"></i>
+                <span>COMPUTER VISION</span> <i class="fa-solid fa-circle"></i>
+                <span>CONVOLUTIONAL NEURAL NETWORKS (CNN)</span> <i class="fa-solid fa-circle"></i>
+                <span>STACKING ENSEMBLES</span> <i class="fa-solid fa-circle"></i>
+                <span>NATURAL LANGUAGE PROCESSING</span> <i class="fa-solid fa-circle"></i>
+                <span>STREAMLIT & REACT</span> <i class="fa-solid fa-circle"></i>
+                <span>OPENCV EMOTION DETECTION</span> <i class="fa-solid fa-circle"></i>
+                <span>SPACY ENTITY RESOLUTION</span> <i class="fa-solid fa-circle"></i>
+                <span>PYTHON & SCIKIT-LEARN</span> <i class="fa-solid fa-circle"></i>
+                <!-- duplicate for infinite loop -->
+                <span>MACHINE LEARNING</span> <i class="fa-solid fa-circle"></i>
+                <span>COMPUTER VISION</span> <i class="fa-solid fa-circle"></i>
+                <span>CONVOLUTIONAL NEURAL NETWORKS (CNN)</span> <i class="fa-solid fa-circle"></i>
+                <span>STACKING ENSEMBLES</span> <i class="fa-solid fa-circle"></i>
+                <span>NATURAL LANGUAGE PROCESSING</span> <i class="fa-solid fa-circle"></i>
+                <span>STREAMLIT & REACT</span> <i class="fa-solid fa-circle"></i>
+                <span>OPENCV EMOTION DETECTION</span> <i class="fa-solid fa-circle"></i>
+                <span>SPACY ENTITY RESOLUTION</span> <i class="fa-solid fa-circle"></i>
+                <span>PYTHON & SCIKIT-LEARN</span> <i class="fa-solid fa-circle"></i>
+            </div>
+        </div>
+
+        <!-- ========================================================
+             ABOUT SECTION
+             ======================================================== -->
+        <section id="about" class="content-section">
+            <div class="container">
+                <div class="section-title-wrap text-center reveal">
+                    <span class="section-pill">BACKGROUND & VISION</span>
+                    <h2 class="section-title">About <span class="highlight-text">Lihash</span></h2>
+                    <p class="section-subtitle">Dedicated to applying mathematical rigor, deep learning, and robust engineering to solve practical challenges.</p>
+                </div>
+
+                <div class="about-grid">
+                    <!-- Biography Card -->
+                    <div class="clean-card about-card reveal">
+                        <h3 class="card-headline"><i class="fa-solid fa-user-astronaut text-cyan"></i> Career Objective</h3>
+                        <p class="card-text">
+                            I am a <strong>third-year B.E. student specializing in Artificial Intelligence and Machine Learning</strong> at <em>KPR Institute of Engineering and Technology</em> (2024–2028).
+                        </p>
+                        <p class="card-text">
+                            My journey is driven by a passion for developing <strong>data-driven solutions</strong> and exploring <strong>computer vision technologies</strong>. From engineering stacking-based machine learning approaches that improve cardiovascular disease prediction accuracy to real-time facial expression classifiers and intelligent geospatial NLP resolvers, I enjoy turning research concepts into functioning applications.
+                        </p>
+                        <p class="card-text">
+                            I am actively looking for a challenging <strong>AI/ML Internship</strong> where I can collaborate with forward-thinking teams, expand my engineering skills, and deliver real impact.
+                        </p>
+
+                        <div class="about-stats-pills">
+                            <div class="about-pill"><i class="fa-solid fa-graduation-cap"></i> 7.9 CGPA</div>
+                            <div class="about-pill"><i class="fa-solid fa-location-dot"></i> Tamil Nadu, India</div>
+                            <div class="about-pill"><i class="fa-solid fa-book-journal-whills"></i> Published Author</div>
+                        </div>
+                    </div>
+
+                    <!-- Core Strengths -->
+                    <div class="clean-card strengths-card reveal delay-1">
+                        <h3 class="card-headline"><i class="fa-solid fa-star text-amber"></i> Core Strengths</h3>
+                        
+                        <div class="strength-rows">
+                            <div class="strength-item">
+                                <div class="strength-icon-box"><i class="fa-solid fa-brain"></i></div>
+                                <div>
+                                    <h4 class="strength-title">Strong AI/ML Foundations</h4>
+                                    <p class="strength-desc">Deep understanding of ensemble architectures, cross-validation, loss functions, and optimization algorithms.</p>
+                                </div>
+                            </div>
+
+                            <div class="strength-item">
+                                <div class="strength-icon-box"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                                <div>
+                                    <h4 class="strength-title">Analytical Problem-Solving</h4>
+                                    <p class="strength-desc">Breaking down messy real-world clinical and spatial datasets into structured, verifiable machine learning pipelines.</p>
+                                </div>
+                            </div>
+
+                            <div class="strength-item">
+                                <div class="strength-icon-box"><i class="fa-solid fa-bolt"></i></div>
+                                <div>
+                                    <h4 class="strength-title">Quick Learner & Highly Adaptable</h4>
+                                    <p class="strength-desc">Rapidly adopting new libraries, APIs, and frameworks from Python and React to modern LLM orchestration tools.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================
+             SCROLLYTELLING: "MY STORY" (THE NEURAL ODYSSEY)
+             Smooth, clean chapter navigation with interactive stage
+             ======================================================== -->
+        <section id="story" class="content-section story-section">
+            <div class="container">
+                <div class="section-title-wrap text-center reveal">
+                    <span class="section-pill">CHRONOLOGICAL JOURNEY</span>
+                    <h2 class="section-title">My <span class="highlight-text">Engineering Story</span></h2>
+                    <p class="section-subtitle">Scroll down to explore how my technical journey unfolded — from algorithms to computer vision, NLP, and published research.</p>
+                </div>
+
+                <div class="scrolly-grid">
+                    
+                    <!-- Left: Scrolling Chapters -->
+                    <div class="scrolly-text-column">
+                        
+                        <!-- Chapter 1 -->
+                        <div class="story-card active" data-step="1">
+                            <div class="chapter-badge">CHAPTER 01</div>
+                            <h3 class="story-title">Foundations & Machine Learning Fundamentals</h3>
+                            <span class="story-period">KPR Institute of Engineering and Technology (2024 &mdash; 2028)</span>
+                            <p class="story-text">
+                                Beginning my B.E. in CSE (Artificial Intelligence and Machine Learning), I immersed myself in discrete mathematics, linear algebra, probability, and foundational machine learning algorithms. Maintaining an academic <strong>CGPA of 7.9/10</strong>, I completed certified programming credentials from IIT Bombay in C, C++, and Python.
+                            </p>
+                            <div class="story-tags">
+                                <span>Python</span>
+                                <span>Algorithms</span>
+                                <span>Data Structures</span>
+                                <span>IIT Bombay Certified</span>
+                            </div>
+                        </div>
+
+                        <!-- Chapter 2 -->
+                        <div class="story-card" data-step="2">
+                            <div class="chapter-badge">CHAPTER 02</div>
+                            <h3 class="story-title">Real-Time Computer Vision & CNNs</h3>
+                            <span class="story-period">Deep Learning & Image Processing</span>
+                            <p class="story-text">
+                                Venturing into computer vision, I engineered an end-to-end facial emotion recognition model using Convolutional Neural Networks (CNNs). The model tracks facial landmarks in real-time video and classifies 7 emotional states with high precision and sub-20ms latency.
+                            </p>
+                            <div class="story-tags">
+                                <span>OpenCV</span>
+                                <span>CNN Deep Learning</span>
+                                <span>Emotion Recognition</span>
+                                <span>Real-Time 60 FPS</span>
+                            </div>
+                        </div>
+
+                        <!-- Chapter 3 -->
+                        <div class="story-card" data-step="3">
+                            <div class="chapter-badge">CHAPTER 03</div>
+                            <h3 class="story-title">Geospatial NLP: Sthalam + PlaceLens</h3>
+                            <span class="story-period">Toponym Disambiguation with spaCy & OpenStreetMap</span>
+                            <p class="story-text">
+                                Solving the challenge of ambiguous place names across Indian documents, I built a web application that extracts geographical entities using spaCy, runs fuzzy matching against GeoNames India and OpenStreetMap Photon, and presents ranked candidates with evidence scores for human review.
+                            </p>
+                            <div class="story-tags">
+                                <span>spaCy NLP</span>
+                                <span>GeoNames India</span>
+                                <span>Photon OSM</span>
+                                <span>React & SQLite</span>
+                            </div>
+                        </div>
+
+                        <!-- Chapter 4 -->
+                        <div class="story-card" data-step="4">
+                            <div class="chapter-badge">CHAPTER 04</div>
+                            <h3 class="story-title">Stacking Ensemble ML & Published Research</h3>
+                            <span class="story-period">Healthcare Predictive Analytics &bull; Published Research Paper</span>
+                            <p class="story-text">
+                                Tackling cardiovascular disease risk prediction, I implemented a multi-classifier stacking ensemble combining Random Forest, XGBoost, and SVM with a Logistic Regression meta-learner. The model significantly outperformed individual classifiers, leading to a peer-reviewed research publication.
+                            </p>
+                            <div class="story-tags">
+                                <span>Ensemble Stacking</span>
+                                <span>Cardiovascular AI</span>
+                                <span>Biomarker Analysis</span>
+                                <span>Published Research</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Right: Sticky Dynamic Stage -->
+                    <div class="scrolly-viewport-column">
+                        <div class="sticky-showcase-card clean-card">
+                            <div class="showcase-header">
+                                <div class="showcase-dots">
+                                    <span class="dot red"></span>
+                                    <span class="dot yellow"></span>
+                                    <span class="dot green"></span>
+                                </div>
+                                <span class="showcase-step-label" id="showcase-step-label">PHASE 01: FOUNDATIONS</span>
+                                <span class="showcase-progress-indicator" id="showcase-progress">STEP 1/4</span>
+                            </div>
+
+                            <div class="showcase-body">
+                                
+                                <!-- Screen 1 -->
+                                <div class="showcase-screen active" id="scrolly-screen-1">
+                                    <div class="screen-preview-box">
+                                        <div class="code-editor-mockup">
+                                            <div class="code-line"><span class="c-keyword">import</span> numpy <span class="c-keyword">as</span> np</div>
+                                            <div class="code-line"><span class="c-keyword">import</span> sklearn.ensemble <span class="c-keyword">as</span> ensemble</div>
+                                            <div class="code-line"><span class="c-comment"># Academic Foundation @ KPR Institute</span></div>
+                                            <div class="code-line">cgpa = <span class="c-number">7.9</span></div>
+                                            <div class="code-line">certifications = [<span class="c-string">"IIT Bombay C"</span>, <span class="c-string">"C++"</span>, <span class="c-string">"Python"</span>]</div>
+                                            <div class="code-line"><span class="c-func">print</span>(f<span class="c-string">"Ready for AIML Challenges: {cgpa}/10"</span>)</div>
+                                        </div>
+                                    </div>
+                                    <div class="screen-caption-row">
+                                        <span>Focus: Data Structures, Algorithms & Machine Learning</span>
+                                        <span class="badge-status">Verified 7.9 CGPA</span>
+                                    </div>
+                                </div>
+
+                                <!-- Screen 2 -->
+                                <div class="showcase-screen" id="scrolly-screen-2">
+                                    <div class="screen-preview-box">
+                                        <img src="images/project-face.jpg" alt="Computer Vision Emotion Recognition" class="screen-img">
+                                    </div>
+                                    <div class="screen-caption-row">
+                                        <span>7-Class Emotion Softmax: Happy (98.6%), Neutral (0.8%)</span>
+                                        <span class="badge-status">Inference: 12ms</span>
+                                    </div>
+                                </div>
+
+                                <!-- Screen 3 -->
+                                <div class="showcase-screen" id="scrolly-screen-3">
+                                    <div class="screen-preview-box">
+                                        <img src="images/project-placelens.jpg" alt="PlaceLens Indian Place-Name Resolver" class="screen-img">
+                                    </div>
+                                    <div class="screen-caption-row">
+                                        <span>GeoNames India + OpenStreetMap Photon Fuzzy Disambiguation</span>
+                                        <span class="badge-status">React + SQLite</span>
+                                    </div>
+                                </div>
+
+                                <!-- Screen 4 -->
+                                <div class="showcase-screen" id="scrolly-screen-4">
+                                    <div class="screen-preview-box">
+                                        <img src="images/project-cardio.jpg" alt="Cardiovascular Disease Stacking" class="screen-img">
+                                    </div>
+                                    <div class="screen-caption-row">
+                                        <span>Stacking Ensemble Architecture: RF + XGB + SVM &rarr; Meta LR</span>
+                                        <span class="badge-status accent">Published Paper</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================
+             TECHNICAL SKILLS (CLEAN BENTO GRID)
+             ======================================================== -->
+        <section id="skills" class="content-section">
+            <div class="container">
+                <div class="section-title-wrap text-center reveal">
+                    <span class="section-pill">TECHNICAL ARSENAL</span>
+                    <h2 class="section-title">My <span class="highlight-text">Skills & Technologies</span></h2>
+                    <p class="section-subtitle">A structured overview of the machine learning algorithms, frameworks, and programming languages I use.</p>
+                </div>
+
+                <div class="skills-bento-grid">
+                    
+                    <!-- Card 1: Machine Learning & Deep Learning -->
+                    <div class="clean-card bento-tile bento-large reveal">
+                        <div class="tile-icon-head">
+                            <div class="tile-icon"><i class="fa-solid fa-brain"></i></div>
+                            <div>
+                                <h3 class="tile-title">Machine Learning & Deep Learning</h3>
+                                <p class="tile-sub">Ensemble Architectures & Neural Models</p>
+                            </div>
+                        </div>
+                        <div class="tile-badges">
+                            <span class="skill-chip"><i class="fa-solid fa-layer-group"></i> Stacking Ensemble Learning</span>
+                            <span class="skill-chip"><i class="fa-solid fa-network-wired"></i> Convolutional Neural Networks (CNN)</span>
+                            <span class="skill-chip"><i class="fa-brands fa-python"></i> Scikit-Learn</span>
+                            <span class="skill-chip"><i class="fa-solid fa-chart-line"></i> Predictive Risk Modeling</span>
+                            <span class="skill-chip"><i class="fa-solid fa-vial"></i> Medical Biomarker Analytics</span>
+                            <span class="skill-chip"><i class="fa-solid fa-filter"></i> Feature Engineering & Cross-Validation</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Computer Vision & NLP -->
+                    <div class="clean-card bento-tile reveal delay-1">
+                        <div class="tile-icon-head">
+                            <div class="tile-icon"><i class="fa-solid fa-eye"></i></div>
+                            <div>
+                                <h3 class="tile-title">Computer Vision & NLP</h3>
+                                <p class="tile-sub">Perception & Document Intelligence</p>
+                            </div>
+                        </div>
+                        <div class="tile-badges">
+                            <span class="skill-chip">OpenCV</span>
+                            <span class="skill-chip">Facial Landmark Tracking</span>
+                            <span class="skill-chip">spaCy Named Entity Recognition</span>
+                            <span class="skill-chip">Fuzzy String Matching</span>
+                            <span class="skill-chip">GeoNames India Database</span>
+                            <span class="skill-chip">OpenStreetMap (Photon)</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Programming Languages -->
+                    <div class="clean-card bento-tile reveal delay-2">
+                        <div class="tile-icon-head">
+                            <div class="tile-icon"><i class="fa-solid fa-code"></i></div>
+                            <div>
+                                <h3 class="tile-title">Programming Languages</h3>
+                                <p class="tile-sub">Syntax, Data Structures & Logic</p>
+                            </div>
+                        </div>
+                        <div class="lang-meter-list">
+                            <div class="lang-item">
+                                <span><i class="fa-brands fa-python text-amber"></i> Python</span>
+                                <div class="lang-bar"><div style="width: 95%;"></div></div>
+                                <span>95%</span>
+                            </div>
+                            <div class="lang-item">
+                                <span><i class="fa-brands fa-java text-cyan"></i> Java</span>
+                                <div class="lang-bar"><div style="width: 85%;"></div></div>
+                                <span>85%</span>
+                            </div>
+                            <div class="lang-item">
+                                <span><i class="fa-solid fa-database text-amber"></i> SQL</span>
+                                <div class="lang-bar"><div style="width: 88%;"></div></div>
+                                <span>88%</span>
+                            </div>
+                            <div class="lang-item">
+                                <span><i class="fa-solid fa-c text-cyan"></i> C / C++</span>
+                                <div class="lang-bar"><div style="width: 82%;"></div></div>
+                                <span>82%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Web & Deployment -->
+                    <div class="clean-card bento-tile bento-large reveal">
+                        <div class="tile-icon-head">
+                            <div class="tile-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                            <div>
+                                <h3 class="tile-title">Web Prototyping & Tools</h3>
+                                <p class="tile-sub">Frontends, APIs & Cloud Deployment</p>
+                            </div>
+                        </div>
+                        <div class="tile-badges">
+                            <span class="skill-chip"><i class="fa-solid fa-fire"></i> Streamlit</span>
+                            <span class="skill-chip"><i class="fa-brands fa-react"></i> React.js</span>
+                            <span class="skill-chip"><i class="fa-solid fa-database"></i> SQLite</span>
+                            <span class="skill-chip"><i class="fa-brands fa-git-alt"></i> Git & GitHub</span>
+                            <span class="skill-chip"><i class="fa-solid fa-terminal"></i> VS Code</span>
+                            <span class="skill-chip"><i class="fa-solid fa-cloud-arrow-up"></i> Vercel Hosting</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================
+             PROJECTS SECTION (CLEAN CARDS & DETAIL MODALS)
+             ======================================================== -->
+        <section id="projects" class="content-section">
+            <div class="container">
+                <div class="section-title-wrap text-center reveal">
+                    <span class="section-pill">FEATURED WORK</span>
+                    <h2 class="section-title">Academic & <span class="highlight-text">Applied Projects</span></h2>
+                    <p class="section-subtitle">Explore 4 key machine learning, computer vision, and NLP systems I have designed and engineered.</p>
+                </div>
+
+                <!-- Project Filters -->
+                <div class="project-filters-wrap reveal">
+                    <button class="filter-btn active" data-filter="all">All Projects (4)</button>
+                    <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                    <button class="filter-btn" data-filter="cv">Computer Vision</button>
+                    <button class="filter-btn" data-filter="nlp">NLP & Web</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-card-grid">
+
+                    <!-- Project 1: Cardiovascular Disease Stacking -->
+                    <div class="clean-card project-card reveal" data-category="ml">
+                        <div class="project-media-wrap">
+                            <img src="images/project-cardio.jpg" alt="Cardiovascular Disease Prediction" class="project-img">
+                            <div class="project-media-badge">PUBLISHED PAPER</div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-tags-row">
+                                <span class="tag-pill">MACHINE LEARNING</span>
+                                <span class="tag-pill">ENSEMBLE STACKING</span>
+                                <span class="tag-pill">PYTHON</span>
+                            </div>
+                            <h3 class="project-card-title">Stacking-Based ML for Cardiovascular Disease</h3>
+                            <p class="project-card-desc">
+                                Implemented a stacking-based machine learning approach to predict cardiovascular diseases. Combined multiple base classifiers to create a robust ensemble model, significantly improving prediction accuracy compared to individual models.
+                            </p>
+                            <div class="project-card-footer">
+                                <a href="https://github.com/lihash2007" target="_blank" class="card-action-btn">
+                                    <i class="fa-brands fa-github"></i> GitHub Code
+                                </a>
+                                <button class="card-action-btn outline open-modal-btn" data-modal="modal-cardio">
+                                    Deep Dive <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Face Expression Recognition -->
+                    <div class="clean-card project-card reveal delay-1" data-category="cv">
+                        <div class="project-media-wrap">
+                            <img src="images/project-face.jpg" alt="Face Expression Recognition" class="project-img">
+                            <div class="project-media-badge">COMPUTER VISION</div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-tags-row">
+                                <span class="tag-pill">COMPUTER VISION</span>
+                                <span class="tag-pill">DEEP LEARNING</span>
+                                <span class="tag-pill">CNN</span>
+                            </div>
+                            <h3 class="project-card-title">Face Expression Recognition</h3>
+                            <p class="project-card-desc">
+                                Developed a machine learning model capable of recognizing various facial expressions in real-time. Utilized Convolutional Neural Networks (CNNs) and image processing techniques to classify emotions with high precision.
+                            </p>
+                            <div class="project-card-footer">
+                                <a href="https://github.com/lihash2007" target="_blank" class="card-action-btn">
+                                    <i class="fa-brands fa-github"></i> GitHub Code
+                                </a>
+                                <button class="card-action-btn outline open-modal-btn" data-modal="modal-face">
+                                    Deep Dive <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Sthalam + PlaceLens -->
+                    <div class="clean-card project-card reveal" data-category="nlp">
+                        <div class="project-media-wrap">
+                            <img src="images/project-placelens.jpg" alt="Sthalam PlaceLens Indian Place-Name Resolver" class="project-img">
+                            <div class="project-media-badge">GEOSPATIAL NLP</div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-tags-row">
+                                <span class="tag-pill">NLP</span>
+                                <span class="tag-pill">SPACY</span>
+                                <span class="tag-pill">REACT</span>
+                                <span class="tag-pill">SQLITE</span>
+                            </div>
+                            <h3 class="project-card-title">Sthalam + PlaceLens: Indian Place-Name Resolver</h3>
+                            <p class="project-card-desc">
+                                Built a web app that resolves place names in Indian documents to real locations using a local GeoNames India database and OpenStreetMap (Photon). Combined spaCy entity recognition with fuzzy spelling match and candidate scores.
+                            </p>
+                            <div class="project-card-footer">
+                                <a href="https://github.com/lihash2007" target="_blank" class="card-action-btn">
+                                    <i class="fa-brands fa-github"></i> GitHub Code
+                                </a>
+                                <button class="card-action-btn outline open-modal-btn" data-modal="modal-placelens">
+                                    Deep Dive <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: AI Legal Contract Analyser -->
+                    <div class="clean-card project-card reveal delay-1" data-category="nlp">
+                        <div class="project-media-wrap">
+                            <img src="images/project-legal.jpg" alt="AI-Based Legal Contract Analyser" class="project-img">
+                            <div class="project-media-badge">STREAMLIT & LLMS</div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-tags-row">
+                                <span class="tag-pill">STREAMLIT</span>
+                                <span class="tag-pill">AI APIS</span>
+                                <span class="tag-pill">NLP</span>
+                                <span class="tag-pill">PYTHON</span>
+                            </div>
+                            <h3 class="project-card-title">AI-Based Legal Contract Analyser</h3>
+                            <p class="project-card-desc">
+                                Built an interactive web application using Streamlit that leverages AI APIs to analyze legal contracts. Automates the extraction of key clauses and potential risks, providing instant summaries and actionable insights.
+                            </p>
+                            <div class="project-card-footer">
+                                <a href="https://github.com/lihash2007" target="_blank" class="card-action-btn">
+                                    <i class="fa-brands fa-github"></i> GitHub Code
+                                </a>
+                                <button class="card-action-btn outline open-modal-btn" data-modal="modal-legal">
+                                    Deep Dive <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================
+             PUBLICATIONS SECTION
+             ======================================================== -->
+        <section id="research" class="content-section">
+            <div class="container">
+                <div class="section-title-wrap text-center reveal">
+                    <span class="section-pill">PEER-REVIEWED CONTRIBUTION</span>
+                    <h2 class="section-title">Research <span class="highlight-text">Publication</span></h2>
+                    <p class="section-subtitle">Academic research in ensemble learning and proactive cardiovascular disease diagnosis.</p>
+                </div>
+
+                <div class="clean-card research-spotlight-card reveal">
+                    <div class="research-status-pill">
+                        <i class="fa-solid fa-certificate"></i> PUBLISHED RESEARCH PAPER
+                    </div>
+
+                    <h3 class="research-paper-title">Cardiovascular Disease Prediction</h3>
+                    <p class="research-paper-author"><strong>Author:</strong> Lihash L B &bull; Specialization: Artificial Intelligence & Machine Learning</p>
+
+                    <p class="research-paper-summary">
+                        This paper investigates the clinical utility of multi-classifier stacking ensemble architectures. By orchestrating diverse base learners (Random Forest, XGBoost, and Support Vector Machines) through a meta-estimator, the system effectively overcomes the variance bottlenecks of single models, demonstrating heightened predictive accuracy and sensitivity on clinical cardiovascular biomarkers.
+                    </p>
+
+                    <div class="research-stats-grid">
+                        <div class="r-stat-box">
+                            <span class="r-stat-label">Core Technique</span>
+                            <span class="r-stat-val">Stacking Ensemble Classifiers</span>
+                        </div>
+                        <div class="r-stat-box">
+                            <span class="r-stat-label">Application Domain</span>
+                            <span class="r-stat-val">Healthcare AI / Clinical Diagnosis</span>
+                        </div>
+                        <div class="r-stat-box">
+                            <span class="r-stat-label">Validation</span>
+                            <span class="r-stat-val">Multi-Risk Biomarker Cross-Validation</span>
+                        </div>
+                        <div class="r-stat-box">
+                            <span class="r-stat-label">Status</span>
+                            <span class="r-stat-val text-amber">Published</span>
+                        </div>
+                    </div>
+
+                    <div class="research-actions-row">
+                        <a href="https://github.com/lihash2007" target="_blank" class="btn-primary-glow">
+                            <i class="fa-brands fa-github"></i> View Research Code
+                        </a>
+                        <a href="mailto:Lihashbalusamy@gmail.com?subject=Inquiry%20regarding%20Cardiovascular%20Research%20Paper" class="btn-secondary-outline">
+                            <i class="fa-solid fa-envelope"></i> Request Full Paper Access
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================
+             EDUCATION & CERTIFICATIONS SECTION
+             ======================================================== -->
+        <section id="education" class="content-section">
+            <div class="container">
+                <div class="section-title-wrap text-center reveal">
+                    <span class="section-pill">ACADEMIC FOUNDATIONS</span>
+                    <h2 class="section-title">Education & <span class="highlight-text">Certifications</span></h2>
+                    <p class="section-subtitle">Consistent academic discipline backed by certified programming qualifications.</p>
+                </div>
+
+                <div class="edu-dual-layout">
+                    
+                    <!-- Left: Academic Path -->
+                    <div class="edu-column reveal reveal-left">
+                        <h3 class="column-title"><i class="fa-solid fa-graduation-cap text-amber"></i> Education</h3>
+                        
+                        <div class="timeline-trail">
+                            
+                            <!-- B.E. Degree -->
+                            <div class="timeline-block">
+                                <div class="timeline-node"></div>
+                                <div class="clean-card timeline-card">
+                                    <span class="timeline-years">2024 &mdash; 2028 (Currently in 3rd Year)</span>
+                                    <h4 class="timeline-degree">B.E. Computer Science & Engineering (AIML)</h4>
+                                    <p class="timeline-school"><i class="fa-solid fa-building-columns"></i> KPR Institute of Engineering and Technology</p>
+                                    <div class="timeline-score-pill">CGPA: 7.9 / 10</div>
+                                </div>
+                            </div>
+
+                            <!-- HSC -->
+                            <div class="timeline-block">
+                                <div class="timeline-node"></div>
+                                <div class="clean-card timeline-card">
+                                    <span class="timeline-years">Higher Secondary Certificate</span>
+                                    <h4 class="timeline-degree">HSC &bull; Science & Mathematics</h4>
+                                    <p class="timeline-school"><i class="fa-solid fa-school"></i> Nava Bharath National School, Annur</p>
+                                    <div class="timeline-score-pill highlight">Score: 85%</div>
+                                </div>
+                            </div>
+
+                            <!-- SSLC -->
+                            <div class="timeline-block">
+                                <div class="timeline-node"></div>
+                                <div class="clean-card timeline-card">
+                                    <span class="timeline-years">Secondary School Leaving Certificate</span>
+                                    <h4 class="timeline-degree">SSLC &bull; Secondary Education</h4>
+                                    <p class="timeline-school"><i class="fa-solid fa-school"></i> Nava Bharath National School, Annur</p>
+                                    <div class="timeline-score-pill highlight">Score: 90.6% Distinction</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Right: Certifications -->
+                    <div class="edu-column reveal reveal-right delay-1">
+                        <h3 class="column-title"><i class="fa-solid fa-award text-cyan"></i> Certifications</h3>
+
+                        <div class="cert-stack">
+                            
+                            <div class="clean-card cert-item">
+                                <div class="cert-icon-box"><i class="fa-solid fa-certificate"></i></div>
+                                <div>
+                                    <span class="cert-org">IIT Bombay &bull; Spoken Tutorial</span>
+                                    <h4 class="cert-title">C Programming Certification</h4>
+                                    <p class="cert-desc">Pointers, memory management, structured programming, and algorithms.</p>
+                                </div>
+                            </div>
+
+                            <div class="clean-card cert-item">
+                                <div class="cert-icon-box"><i class="fa-solid fa-certificate"></i></div>
+                                <div>
+                                    <span class="cert-org">IIT Bombay &bull; Spoken Tutorial</span>
+                                    <h4 class="cert-title">C++ Programming Certification</h4>
+                                    <p class="cert-desc">Object-Oriented Programming (OOP), templates, and Standard Template Library.</p>
+                                </div>
+                            </div>
+
+                            <div class="clean-card cert-item">
+                                <div class="cert-icon-box"><i class="fa-solid fa-certificate"></i></div>
+                                <div>
+                                    <span class="cert-org">IIT Bombay &bull; Spoken Tutorial</span>
+                                    <h4 class="cert-title">Python Programming Certification</h4>
+                                    <p class="cert-desc">Scientific computing, numerical data manipulation, and software engineering.</p>
+                                </div>
+                            </div>
+
+                            <div class="clean-card cert-item spotlight">
+                                <div class="cert-icon-box accent"><i class="fa-solid fa-newspaper"></i></div>
+                                <div>
+                                    <span class="cert-org">Academic Publication</span>
+                                    <h4 class="cert-title">Cardiovascular Disease Prediction Paper</h4>
+                                    <p class="cert-desc">Published research paper validating Stacking-Based ML for medical diagnosis.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================
+             CONTACT SECTION
+             ======================================================== -->
+        <section id="contact" class="content-section">
+            <div class="container">
+                <div class="section-title-wrap text-center reveal">
+                    <span class="section-pill">GET IN TOUCH</span>
+                    <h2 class="section-title">Let's <span class="highlight-text">Connect</span></h2>
+                    <p class="section-subtitle">Interested in offering an AIML internship, discussing research, or collaborating on a project? Feel free to reach out.</p>
+                </div>
+
+                <div class="contact-card-grid">
+                    
+                    <!-- Left: Contact Information -->
+                    <div class="clean-card contact-info-card reveal reveal-left">
+                        <h3 class="contact-name">Lihash L B</h3>
+                        <p class="contact-headline">Aspiring AI/ML Intern &bull; Open for Opportunities</p>
+
+                        <div class="contact-entries">
+                            <div class="c-entry">
+                                <div class="c-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <span class="c-label">Email Address</span>
+                                    <a href="mailto:Lihashbalusamy@gmail.com" class="c-link">Lihashbalusamy@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="c-entry">
+                                <div class="c-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div>
+                                    <span class="c-label">Phone</span>
+                                    <a href="tel:+918524061361" class="c-link">+91 8524061361</a>
+                                </div>
+                            </div>
+
+                            <div class="c-entry">
+                                <div class="c-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <span class="c-label">Location</span>
+                                    <span class="c-text">Tamil Nadu, India</span>
+                                </div>
+                            </div>
+
+                            <div class="c-entry">
+                                <div class="c-icon"><i class="fa-brands fa-linkedin"></i></div>
+                                <div>
+                                    <span class="c-label">LinkedIn</span>
+                                    <a href="https://www.linkedin.com/in/lihashbalusamy/" target="_blank" class="c-link">linkedin.com/in/lihashbalusamy</a>
+                                </div>
+                            </div>
+
+                            <div class="c-entry">
+                                <div class="c-icon"><i class="fa-brands fa-github"></i></div>
+                                <div>
+                                    <span class="c-label">GitHub</span>
+                                    <a href="https://github.com/lihash2007" target="_blank" class="c-link">github.com/lihash2007</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-quick-btn-box">
+                            <a href="mailto:Lihashbalusamy@gmail.com?subject=AIML%20Internship%20Inquiry" class="btn-primary-glow" style="width: 100%; text-align: center;">
+                                <i class="fa-solid fa-paper-plane"></i> Send Direct Email
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right: Clean Contact Form -->
+                    <div class="clean-card contact-form-card reveal reveal-right delay-1">
+                        <form id="contact-form" class="clean-form">
+                            <div class="form-row-duo">
+                                <div class="form-field">
+                                    <label for="name">Your Name / Organization <span class="req">*</span></label>
+                                    <input type="text" id="name" name="name" required placeholder="e.g. John Doe / Tech Corp" class="form-input">
+                                </div>
+                                <div class="form-field">
+                                    <label for="email">Your Email Address <span class="req">*</span></label>
+                                    <input type="email" id="email" name="email" required placeholder="e.g. recruiter@company.com" class="form-input">
+                                </div>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="e.g. AIML Internship Opportunity" class="form-input">
+                            </div>
+
+                            <div class="form-field">
+                                <label for="message">Message <span class="req">*</span></label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Tell me about the role, project scope, or opportunity..." class="form-input"></textarea>
+                            </div>
+
+                            <button type="submit" id="submit-btn" class="btn-primary-glow form-submit-btn">
+                                <span>Send Message</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+
+                            <div id="form-msg" class="form-feedback-pill"></div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Project Modals (Detailed Deep-Dives) -->
+    <div id="modal-backdrop" class="modal-backdrop" aria-hidden="true">
+        
+        <!-- Cardio Modal -->
+        <div id="modal-cardio" class="clean-card modal-window">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <span class="modal-pill">MACHINE LEARNING &bull; HEALTHCARE</span>
+            <h2 class="modal-title">Stacking-Based ML for Cardiovascular Disease</h2>
+            <img src="images/project-cardio.jpg" alt="Cardiovascular Disease" class="modal-img">
+            <div class="modal-content">
+                <h3>Problem Statement</h3>
+                <p>Cardiovascular disease is the leading global cause of mortality. Early identification through routine clinical indicators allows timely preventative treatments.</p>
+                <h3>Methodology</h3>
+                <ul>
+                    <li>Combined multiple base models (Random Forest, XGBoost, SVM) into a unified ensemble.</li>
+                    <li>Employed Logistic Regression as the meta-learner to blend predictions from base classifiers.</li>
+                    <li>Achieved significant reduction in classification variance and validated results through a published research paper.</li>
+                </ul>
+            </div>
+            <div class="modal-action-row">
+                <a href="https://github.com/lihash2007" target="_blank" class="btn-primary-glow"><i class="fa-brands fa-github"></i> View GitHub Repository</a>
+            </div>
+        </div>
+
+        <!-- Face Modal -->
+        <div id="modal-face" class="clean-card modal-window">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <span class="modal-pill">COMPUTER VISION &bull; DEEP LEARNING</span>
+            <h2 class="modal-title">Face Expression Recognition</h2>
+            <img src="images/project-face.jpg" alt="Face Expression Recognition" class="modal-img">
+            <div class="modal-content">
+                <h3>System Architecture</h3>
+                <p>Built a real-time computer vision emotion classifier using deep Convolutional Neural Networks and OpenCV image processing.</p>
+                <h3>Capabilities</h3>
+                <ul>
+                    <li>Recognizes 7 distinct affective facial states with high precision.</li>
+                    <li>Achieves sub-20ms inference time enabling smooth 60 FPS live video execution.</li>
+                </ul>
+            </div>
+            <div class="modal-action-row">
+                <a href="https://github.com/lihash2007" target="_blank" class="btn-primary-glow"><i class="fa-brands fa-github"></i> View GitHub Repository</a>
+            </div>
+        </div>
+
+        <!-- PlaceLens Modal -->
+        <div id="modal-placelens" class="clean-card modal-window">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <span class="modal-pill">GEOSPATIAL NLP &bull; REACT & SQLITE</span>
+            <h2 class="modal-title">Sthalam + PlaceLens: Indian Place-Name Resolver</h2>
+            <img src="images/project-placelens.jpg" alt="Sthalam PlaceLens" class="modal-img">
+            <div class="modal-content">
+                <h3>Problem & Innovation</h3>
+                <p>Resolves ambiguous Indian geographical names from text documents (TXT, DOCX, PDF) to verified geographic coordinates.</p>
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Combines spaCy Named Entity Recognition with fuzzy spelling matching.</li>
+                    <li>Leverages offline GeoNames India DB and OpenStreetMap (Photon).</li>
+                    <li>Interactive React UI allowing human review of ambiguous mentions with structured JSON export.</li>
+                </ul>
+            </div>
+            <div class="modal-action-row">
+                <a href="https://github.com/lihash2007" target="_blank" class="btn-primary-glow"><i class="fa-brands fa-github"></i> View GitHub Repository</a>
+            </div>
+        </div>
+
+        <!-- Legal Modal -->
+        <div id="modal-legal" class="clean-card modal-window">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <span class="modal-pill">AI APIS &bull; STREAMLIT</span>
+            <h2 class="modal-title">AI-Based Legal Contract Analyser</h2>
+            <img src="images/project-legal.jpg" alt="Legal Contract Analyser" class="modal-img">
+            <div class="modal-content">
+                <h3>Overview</h3>
+                <p>Interactive web application that uses AI APIs to analyze commercial agreements and legal contracts.</p>
+                <h3>Features</h3>
+                <ul>
+                    <li>Automated extraction of indemnity, termination, and liability clauses.</li>
+                    <li>Generates instant risk summaries and actionable insights for document review.</li>
+                </ul>
+            </div>
+            <div class="modal-action-row">
+                <a href="https://github.com/lihash2007" target="_blank" class="btn-primary-glow"><i class="fa-brands fa-github"></i> View GitHub Repository</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Clean Footer -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <div class="nav-brand">
+                    <span class="brand-badge">L</span>
+                    <span class="brand-title">Lihash</span>
+                </div>
+                <p class="footer-desc">
+                    Machine Learning & Computer Vision Engineer. Pre-final year B.E. student specializing in Artificial Intelligence & Machine Learning at KPR Institute.
+                </p>
+                <div class="footer-status-tag">
+                    <span class="status-green"></span>
+                    <span>Available for 2026 AIML Internships</span>
+                </div>
+            </div>
+
+            <div class="footer-links-col">
+                <h4 class="footer-heading">Navigation</h4>
+                <ul class="footer-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#story">My Story</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#education">Education</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact-col">
+                <h4 class="footer-heading">Connect</h4>
+                <ul class="footer-contact-list">
+                    <li><i class="fa-solid fa-envelope"></i> <a href="mailto:Lihashbalusamy@gmail.com">Lihashbalusamy@gmail.com</a></li>
+                    <li><i class="fa-solid fa-phone"></i> <a href="tel:+918524061361">+91 8524061361</a></li>
+                    <li><i class="fa-solid fa-location-dot"></i> Tamil Nadu, India</li>
+                    <li><i class="fa-brands fa-github"></i> <a href="https://github.com/lihash2007" target="_blank">github.com/lihash2007</a></li>
+                    <li><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/lihashbalusamy/" target="_blank">linkedin.com/in/lihashbalusamy</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <span>&copy; 2026 Lihash L B. All Rights Reserved &bull; Built for Vercel.</span>
+            <a href="#home" class="back-to-top">Back to top <i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
